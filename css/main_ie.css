@@ -1,0 +1,1857 @@
+/* 
+    Document   : main_ie
+    Created on : Feb 25, 2010, 9:39:20 AM
+    Author     : HG
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root {
+    display: block;
+}
+
+body
+{
+
+    z-index:1;
+    width: 100%;
+    height: 1000px;
+    top:0;
+    left:0;
+    padding: 0;
+    margin:0;
+    font-family: arial;
+    text-align: center;
+    
+}
+
+#content
+{
+    position: relative;
+    text-align:center;
+    margin:0 auto 0;
+    width: 1200px;
+
+}
+
+#headerText
+{
+        margin-left: -55px;
+
+}
+/*
+   Start the head Section format
+*/
+
+#navigator li
+{
+        width: 60px;
+}
+
+#fbConnect_top
+{
+    position: absolute;
+    right: 430px;
+    top: 0px;
+}
+
+#fbLoginButton
+{
+    float: right;
+    margin-right: 120px;
+    margin-top: -68px;
+}
+
+
+
+
+
+#logo
+{
+
+/*    width: 250px;
+    height: 90px;*/
+    position: relative;
+    left:10px;
+    float: left;
+    top:0px;
+    /*margin-bottom: 10px;*/
+     /*border:1px solid;*/
+}
+
+
+#logoutMessage
+{
+
+}
+
+#logoutLink
+{
+    color:blue;
+    text-decoration: none;
+}
+
+#logoutLink:hover
+{
+
+    text-decoration: underline;
+}
+
+#headSection
+{
+    position: relative;
+    top:15px;
+    left:-15px;
+    margin: 0px;
+    padding: 0px;
+    width: 1161px;
+    text-align: left;
+
+    /*margin-top: 16px;*/
+    /*height: 80px;*/
+
+
+}
+
+#searchCategory
+{
+    width: 220px;
+}
+
+#searchForm
+{
+    margin-right: 460px;
+}
+
+#loginForm
+{
+
+}
+
+
+
+#welcomeMesg
+{
+        margin-top: -40px;
+        width: 390px;
+}
+
+
+
+#commentBox
+{
+        padding: 2px;
+        border: 1px solid #c4c4c4;
+        margin-top: 5px;
+        overflow: auto;
+        height: 230px;
+        width: 515px;
+
+}
+
+#loginMessageBox
+{
+        position:absolute;
+/*        top: 20%;
+        left:72%;*/
+        width: 380px;
+        padding-top: 0px;
+        text-align:center;
+        font-size: 10px;
+        color:red;
+        margin-top:25px;
+        font-size: 10px;
+}
+
+
+#forgotPasswordLink
+{
+        float:right;
+        /*margin-top: -19px;*/
+        /*margin-right: 15px;*/
+        cursor: pointer;
+        font-size: 10px;
+        text-decoration: none;
+        /*border: 1px solid;*/
+}
+
+#importButton
+{
+        position: absolute;
+        top: 95px;
+        left: 930px;
+        /*visibility: hidden;*/
+
+
+
+        cursor:pointer;
+/*                border-style: solid;
+*//*	border-width: 1px;
+        border-color: black;*/
+        text-align: center;
+
+}
+
+
+
+#myAccountMenu .menuText
+{
+        width: 130px;
+}
+
+
+#newMessageBubble
+{
+        position: absolute;
+
+        right: 33px;
+}
+
+
+#categoryListPanel
+{
+        position: absolute;
+        /*left: 40%;*/
+        /*top:251px;*/
+        height: 275px;
+        width: 460px;
+        background-color: #f4f4f4;
+        border: 1px solid #c4c4c4;
+        /*border-top:none;*/
+        z-index: 3;
+        visibility: hidden;
+        padding: 2px;
+
+}
+
+#categoryCol
+{
+        /*height: 400px;*/
+        margin-top:5px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        width: 225px;
+/*        border-style: solid;
+        border-width: 1px;*/
+        background-color: #f4f4f4;
+        text-decoration: none;
+        padding-left: 1px;
+        display: inline;
+
+}
+
+#categoryCol li
+{
+        position:relative;
+        left:0px;
+	list-style: none;
+	cursor: pointer;
+        padding-left: 15px;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        text-align: left;
+}
+
+#categoryCol li:hover
+{
+        text-decoration: underline;
+        background-color: gray;
+}
+
+/*
+   End the head Section format
+*/
+
+/*
+   Start the middle Section format
+*/
+
+#middleSection
+{
+        position:relative;
+        top: 20px;
+        left:-15px;
+        width: 1161px;
+	height: 690px;
+	text-align: left;
+
+        z-index: 2;
+/*	border-style: solid;
+	border-width: 1px;*/
+}
+
+
+#middeBorderBoxTop
+{
+        position:relative;
+        top: 25px;
+        left:-15px;
+        width: 1161px;
+	height: 20px;
+        background-image: url("../webImages/borderbox_top.png");
+        background-repeat:no-repeat;
+        margin-top:20px;
+}
+
+#middeBorderBoxBottom
+{
+        position: relative;
+        left:-15px;
+        top: 10px;
+        width: 1161px;
+	height: 90px;
+        background-image: url("../webImages/borderbox_bottom.png");
+        background-repeat:no-repeat;
+        z-index: 1;
+        /*border: 1px solid;*/
+}
+
+
+
+#signupBox
+{
+/*	position:relative;
+        top: 0px;
+        left:25px;*/
+	width: 340px;
+	height: 253px;
+	text-align: left;
+/*	border-style: solid;
+	border-width: 1px;*/
+        font-family: arial;
+        border: 1px solid #c4c4c4;
+        padding: 15px;
+        background-color: #dddddd;
+}
+
+#homePicture
+{
+    
+}
+
+#joinButton
+{
+    margin-top: -52px;
+
+}
+
+#homeLogInBanner
+{
+        width: 663px;
+}
+
+#middleLeftSection
+{
+	position:absolute;
+        top: 0px;
+        /*left:5px;*/
+        width: 61%;
+	height: 98%;
+        margin: 5px;
+        padding-left:15px;
+
+/*                  border-style: solid;
+	border-width: 1px;      */
+
+}
+
+
+#middleRightSection
+{
+	position:absolute;
+        top: 0;
+        right: 0px;
+        width: 375px;
+	height: 98%;
+        margin: 5px;
+        /*padding: 5px;*/
+/*        border-style: solid;
+	border-width: 1px;*/
+        z-index: -1;
+
+}
+
+#recentSoldBox
+{
+    /*padding: 1px;*/
+    padding-left: 4px;
+    border: 1px solid #c4c4c4;
+    height: 60px;
+}
+
+
+#rightMenuBar
+{
+        width: 355px;
+	height: 200px;
+        background-image: url("../webImages/rightMenuBorder.jpg");
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-left: 1px;
+/*                border-style: solid;
+	border-width: 1px;*/
+}
+
+
+#rightMenuBar li
+{
+        float: left;
+        display:inline;
+        margin-top:2px;
+        background-image: url("../webImages/sidemenutab.png");
+        width: 332px;
+	height: 38px;
+        list-style: none;
+	cursor: pointer;
+/*            border-style: solid;
+	border-width: 1px;*/
+}
+
+#rightMenuText
+{
+        padding-left: 20px;
+        padding-top: 10px;
+	font-family: Arial;
+	font-size: 18px;
+        font-weight: bold;
+	border-style: solid;
+	border-width: 0;
+        color:#213155;
+        float:left;
+        display:inline;
+
+
+}
+
+#featureProductSection
+{
+	position:absolute;
+        top: 300px;
+        left:10px;
+        /*left:25px;*/
+        /*margin-top: 20px;*/
+/*        width: 660px;
+	height: 200px;*/
+/*                border-style: solid;
+	border-width: 1px;*/
+}
+
+#itemPictureBox
+{
+
+}
+
+#featureItemContainer
+{
+
+}
+
+#buyItemContainer
+{
+	width: 112px;
+	height: 150px;
+        margin: 9px;
+/*        border-style: solid;
+	border-width: 1px;*/
+        float:left;
+        display:inline;
+        font-family: arial;
+/*        position: relative;
+        left: 0px;
+        top: 0px;*/
+        padding: 0px;
+        zoom: 1;
+
+}
+
+
+
+.itemCatchPhrase
+{
+        border: 1px solid;
+        /*position: absolute;*/
+}
+
+
+
+/*
+   End the middle Section format
+*/
+
+/*
+   Start format components of the registration function
+*/
+/*#registrationBox
+{
+	position:relative;
+        top: 20px;
+        left:25px;
+	width: 90%;
+	height: 570px;
+	text-align: left;
+        font-family: arial;
+        	border-style: solid;
+	border-width: 1px;
+}
+
+#registrationBox input
+{
+        margin: 2px;
+}
+*/
+
+
+#confirmMessageBox
+{
+	width: 585px;
+	height: 185px;
+        position:relative;
+        top: 20px;
+        left:5%;
+        font-family: arial;
+        font-size:16px;
+        background-image: url("../webImages/verifybox.png");
+}
+
+#confirmMessage
+{
+	width: 450px;
+	height: 150px;
+        position:relative;
+        top: 20px;
+        left:2%;
+        font-family: arial;
+        font-size:16px;
+/*                border-style: solid;
+	border-width: 1px;*/
+}
+
+
+
+/*
+   End format components of the registration function
+*/
+
+/*
+   Start format components of the search function
+*/
+#searchResultBox
+{
+
+        position: relative;
+        top: 20px;
+	width: 700px;
+	height: 95%;
+	/*text-align: left;*/
+/*	border-style: solid;
+	border-width: 1px;*/
+        padding: 10px;
+        background-image: url("../webImages/searchBoxBorder.png");
+        background-repeat: no-repeat;
+
+
+}
+
+#sortBar
+{
+        position:absolute;
+        top: 29px;
+        right:40px;
+
+        width: 430px;
+	height: 40px;
+/*        	border-style: solid;
+	border-width: 1px;*/
+}
+
+
+#searchItemContainer
+{
+	width: 110px;
+	height: 170px;
+        margin: 9px;
+/*        border-style: solid;
+	border-width: 1px;*/
+        float:left;
+        font-family: arial;
+        display:inline;
+
+}
+
+#searchItemContainer a:link
+{
+        color: black;
+}
+
+#searchItemContainer a:visited
+{
+        color: purple;
+}
+
+#smallNewTag
+{
+        background-color: #fe0277;
+        color:white;
+        width: 35px;
+        height:15px;
+        position: relative;
+        top: -17px;
+        left: 0px;
+        font-size: 12px;
+        font-weight: bold;
+        padding-top: 2px;
+        text-align: center;
+        z-index: 2;
+}
+
+
+
+.popUpItemInfo
+{
+        position:absolute;
+/*        border-style:solid;
+        border-width: 1px;
+        border-color: blue;*/
+        width:403px;
+        height:180px;
+        z-index: 4;
+        visibility: hidden;
+        padding-left: 20px;
+        padding-top:15px;
+        padding-bottom:12px;
+        padding-right: 0px;
+        font-size: 13px;
+        /*background-color: white;*/
+        background-image: url("../webImages/popUpBubble.png");
+        background-repeat: no-repeat;
+        word-wrap: break-word;
+}
+
+.popUpItemInfo div
+{
+        margin: 0px;
+        padding: 0px;
+}
+
+
+#popUpDesc
+{
+        word-wrap: break-word ;
+        width:360px;
+}
+
+.popUpButton
+{
+        position:absolute; 
+        left:200px;
+        margin-top:-7px;
+}
+
+
+#pageBar
+{
+        position:absolute;
+        bottom:15px;
+        /*left:42%;*/
+
+	width: 320px;
+        padding-left: 1px;
+        text-decoration: none;
+        color:#213155;
+        height: 13px;
+        /*margin-top: 10px;*/
+        padding: 3px;
+        z-index: 3;
+
+}
+
+#pageBar li
+{
+/*        position: relative;
+        top:2px;
+        left:0px;*/
+/*        width: 15px;*/
+        list-style: none;
+	float: left;
+        display:inline;
+	cursor: pointer;
+/*        border-style: solid;
+	border-width: 1px;*/
+        border-right-style: solid;
+        border-right-color: #213155;
+        border-right-width: 1px;
+        padding-left: 5px;
+        padding-right: 5px;
+        /*padding-bottom: 5px;*/
+        /*padding-top: 5px;*/
+        margin-top: 7px;
+        /*padding-top: 5px;*/
+        height: 10px;
+
+        text-align:center;
+        text-decoration: none;
+        font-size: 14px;
+}
+
+#nextPageButton
+{
+        margin-top: -1px;
+}
+
+/*#pageCell
+{
+        color: green;
+        width: 5px;
+        border-style: solid;
+	border-width: 1px;
+}*/
+
+/*
+   End format components of the search function
+*/
+
+/*
+   Start format components for displayItemDetailpage
+*/
+
+#itemDetailBox
+{
+        border-style:solid;
+	border-width: 1px;
+        border-color: #c4c4c4;
+ 	width: 710px;
+	height: 627px;
+        margin-top: 15px;
+        padding-right: 8px;
+        /*margin-left: 5px;*/
+        z-index: 1;
+}
+
+#itemProperties
+{
+        width: 320px;
+        border-style:solid;
+	border-width: 2px;
+}
+
+#categoryDetailString
+{
+
+        float: right;
+        display:inline;
+        margin-right: 5px;
+
+
+        font-size: 10px;
+        /*font-weight:bold;*/
+        font-family: arial;
+        text-align: right;
+
+}
+
+#itemNumber
+{
+/*        border-style:solid;
+	border-width: 1px;*/
+        float: right;
+        margin-right: 5px;
+        padding-top: 5px;
+        color:#213155;
+        font-size: 14px;
+        /*font-weight:bold;*/
+        font-family: arial;
+}
+
+#newtag
+{
+        position: absolute;
+        top:72px;
+        left: 2px;
+        /*margin-left: 2px;*/
+/*	width: 120px;
+	height: 120px;*/
+        z-index: 5;
+}
+#itemPicture
+{
+	width: 325px;
+	height: 200px;
+        border-style:ridge;
+        border-width:thin;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        /*position: absolute;*/
+        z-index: 1;
+        background-color: #F8F8FF;
+
+}
+
+#enlargeButton
+{
+        position: absolute;
+        top:250px;
+        left:330px;
+        z-index:2;
+}
+
+#smallPictureList
+{
+        margin-left: 10px;
+/*        border-style: solid;
+	border-width: 1px;*/
+ 	width: 340px;
+	height: 40px;
+        padding-left: 0px;
+        margin-top: 0;
+}
+
+#smallPictureList li
+{
+        border: 1px solid #c4c4c4;
+        margin-top: 5px;
+        margin-right: 5px;
+ 	width: 50px;
+	height: 30px;
+        float: left;
+        display:inline;
+        list-style: none;
+        cursor: pointer;
+}
+
+#smallPictureList li img
+{
+        text-align: center;
+        display:block;
+        margin: 0 auto;
+}
+
+#itemDesc
+{
+        font-family: arial;
+        font-size: 13px;
+
+}
+
+#bidAmount
+{
+        width: 121px;
+        margin-top: 5px;
+}
+
+
+#bidTable
+{
+        width: 600px;
+        /*height: 400px;*/
+        font-size: 14px;
+}
+
+#bidTable th
+{
+        height: 20px;
+        background-color: #c4c4c4;
+        text-align:left;
+        padding: 10px;
+}
+
+#bidTable td
+{
+        padding: 10px;
+        height: 20px;
+}
+
+#bidResult
+{
+        position: absolute;
+        right:0px;
+        top: 26px;
+        border: 1px solid;
+        border-color: #c4c4c4;
+        float: right;
+        display:inline;
+        margin-right: 30px;
+        margin-top:10px;
+        width: 305px;
+        word-wrap: break-word;
+        font-size: 14px;
+        padding: 5px;
+        display: inline;
+}
+
+#bidStatusBox
+{
+
+        /*border: 1px solid;*/
+        /*width: 320px;*/
+
+
+        /*border-top:1px solid #999;*/
+}
+
+
+/* ***** Tabs *************************************************************** */
+div.TabView
+{
+    /*position: relative;*/
+    margin-bottom: 10px;
+    margin-left: 14px;
+
+
+}
+
+div.TabView div.Tabs
+{
+  height: 25px;
+  width: 527px;
+  background: url('../webImages/tab-view.png')  repeat-x 0px -72px;
+
+/*            border-style: solid;
+	border-width: 1px;*/
+}
+
+div.TabView div.Tabs a
+{
+  display: block;
+  float:    left;
+  display:inline;
+  margin-right: 1px;
+
+  width: 153px;
+  text-align: center;
+
+  height:      22px;
+  line-height: 21px;
+  vertical-align: middle;
+
+  background: url('../webImages/tab-view.png') no-repeat 0px   0px;
+
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 12px;
+  color:   #213155;
+  cursor:  pointer;
+  text-align: left;
+  padding-left: 5px;
+/*          border-style: solid;
+	border-width: 1px;*/
+
+}
+
+div.TabView div.Tabs a:hover
+{
+  background: url('../webImages/tab-view.png') no-repeat 0px -35px;
+}
+
+div.TabView div.Tabs a.Current,
+div.TabView div.Tabs a.Current:hover
+{
+  margin-top: 01px;
+  height:     21px;
+  background: url('../webImages/tab-view.png') no-repeat 0px   0px;
+  cursor:  default;
+}
+
+
+/* ***** Pages ************************************************************** */
+
+div.TabView div.Pages
+{
+  clear: both;
+  margin-top: -3px;
+  border: 1px solid #404040;
+  border-top-width: 0;
+
+  background-color: #eaeaea;
+  word-wrap: break-word ;
+  width: 527px;
+  height: 310px;
+
+}
+
+div.TabView div.Pages                  { overflow: hidden; }
+div.TabView div.Pages div.Page         { overflow:   auto; font-family: arial; font-size: 13px;}
+div.TabView div.Pages div.Page div.Pad { padding: 5px 5px; }
+
+
+#tagBox
+{
+/*            border-style: solid;
+	border-width: 1px;*/
+/*        position: absolute;
+        bottom:6px;;
+        right:45px;*/
+        height:120px;
+        width: 150px;
+        border-top:1px solid #999;
+        font-size: 12px;
+        margin-top: 10px;
+}
+
+#toolBox
+{
+        /*border: 1px solid;*/
+        width: 150px;
+        height: 310px;
+        float: right;
+        position: absolute;
+        bottom: 13px;
+        left: 570px;
+}
+
+#shareBox
+{
+        border: 1px solid #c4c4c4;
+        padding: 5px;
+        font-family:helvetica,sans-serif;
+        font-size:12px;
+        width: 97px;
+}
+/*
+   End format components for the displayItemDetailpage
+*/
+
+/*
+   Start format components of the list item pages & functions
+*/
+#mediumBorderBox
+{
+   	width: 99%;
+	height: 94%;
+/*        border-style: solid;
+	border-width: 1px;*/
+        margin-top: 10px;
+        background-image: url("../webImages/mediumBoxBorder.png");
+        background-repeat: no-repeat;
+        text-align: center;
+}
+
+#importerBox
+{
+        position: absolute;
+        left:5%;
+        margin-top: 15px;
+        /*border: 1px solid #c4c4c4;*/
+        font-size: 12px;
+        width: 150px;
+        height:  130px;
+        word-wrap: break-word ;
+        text-align: center;
+        color: #FF0069;
+        font-weight: bold;
+}
+
+#importDetail
+{
+    position: relative;
+    left:15px;
+    width: 700px;
+
+    font-size: 14px;
+
+    text-align: left;
+}
+
+#importDetail div
+{
+    border: 1px solid #c4c4c4;
+    padding: 10px;
+    /*height: 150px;*/
+
+}
+
+
+
+#paperClip
+{
+        position: absolute;
+        right:6%;
+        margin-top: -6px;
+/*        width: 200px;
+	height: 200px;*/
+/*        border-style: solid;
+	border-width: 1px;*/
+}
+
+#expireListingBox
+{
+        position: absolute;
+        top: 220px;
+        left:5%;
+        /*position:relative;*/
+        margin-top: 0px;
+        margin-bottom: 0px;
+   	width: 640px;
+	/*height: 30%;*/
+        border-style: solid;
+	border-width: 1px;
+        background-color:#eaeaea;
+        padding-bottom: 0px;
+}
+
+#currentListingBox
+{
+        position: absolute;
+        bottom: 23px;
+        left:5%;
+        /*position:relative;*/
+        margin-top: 5px;
+        margin-bottom: 0px;
+   	width: 640px;
+	/*height: 30%;*/
+        border-style: solid;
+	border-width: 1px;
+        background-color:#eaeaea;
+        padding-bottom: 30px;
+
+}
+
+#colorHeading
+{
+        background-color: #ff0069;
+        font-size: 18px;
+        font-weight: bold;
+        color:white;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: 25px;
+}
+
+#currentListing
+{
+        margin: 10px;
+        padding-left: 1px;
+        
+/*        border-style: solid;
+	border-width: 1px;*/
+   	/*width: 640px;*/
+        /*position: relative;*/
+}
+
+#currentListing li
+{
+        list-style: none;
+	float: left;
+        display:inline;
+	/*cursor: pointer;*/
+        width: 110px;
+	height: 100px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0px;
+        /*position: relative;*/
+/*        border-style: solid;
+	border-width: 1px;*/
+}
+
+#listedItemBox
+{
+        width: 110px;
+	height: 100px;
+        z-index: 1;
+        background-color: white;
+        border: 1px solid #c4c4c4;
+        position: absolute;
+        margin-left: -55px;
+}
+
+.haveBidButton
+{
+        z-index: 2;
+        /*opacity:0.7;*/
+        position: relative;
+        top: 5px;
+        right: 0px;
+/*
+                border-style: solid;
+	border-width: 1px;*/
+
+}
+
+.removeItemButton
+{
+        z-index: 4;
+        /*opacity:0.7;*/
+        position: relative;
+        left: 80px;
+        width: 30px;
+        width: 30px;
+        height: 30px;
+/*                border-style: solid;
+	border-width: 1px;*/
+        background-color: white;
+        visibility: hidden;
+}
+
+#subscribeBox
+{
+
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+/*        border-style: solid;
+        border-width: 1px;*/
+/*        width: 380px;
+        height: 90px;*/
+        margin-bottom: 100px;
+        background-image: url("../webImages/subscribeBorder.png");
+        background-repeat: no-repeat;
+
+}
+
+
+#listItemForm
+{
+    	margin-top: 10px;
+        margin-bottom: 10px;
+	width: 98%;
+	height: 98%;
+        float: left;
+        display:inline;
+/*        border-style: solid;
+	border-width: 1px;*/
+        padding: 0px;
+
+}
+
+#listItemDetailTable
+{
+    width: 300px;
+    height: 550px;
+    position: absolute;
+    left: 10px;
+    top: 75px;
+}
+
+#listItemForm input
+{
+    	margin-top: 10px;
+        font-size: 14px;
+        font-family: arial;
+}
+
+.listFormMessage
+{
+    position: absolute;
+    bottom:20px;
+    left: 320px;
+    width: 290px;
+    height: 40px;
+    text-align: left;
+
+}
+
+#itemCategory
+{
+        width: 195px;
+        color:#F52887;
+}
+
+#categoryList
+{
+        width:275px;
+}
+
+
+#uploadForm
+{
+        position: absolute;
+        left:47%;
+        margin-top: 20px;
+	width: 340px;
+	height: 240px;
+        text-align: left;
+
+}
+
+#uploadPictureBox
+{
+        position: absolute;
+        top:20px;
+        left: 0px;
+        width: 320px;
+        height: 300px;
+        padding: 0px;
+}
+
+#bigPictureBox
+{
+        margin-bottom: 5px;
+	width: 275px;
+	height: 160px;
+	text-align: left;
+	border-style:inset;
+	border-width: 1px;
+        background-color: #eaeaea;
+        vertical-align: middle;
+        padding: 2px;
+
+}
+
+#picture
+{
+        cursor: pointer;
+        text-align: center;
+        display:block;
+        /*cursor: url("../webImages/imagezoomglass.png");*/
+}
+
+#bigVideoBox
+{
+        /*float: left;*/
+        margin-bottom: 8px;
+	width: 275px;
+	height: 160px;
+	text-align: left;
+	border-style:inset;
+	border-width: 1px;
+        background-color: #eaeaea;
+        /*padding: 2px;*/
+
+}
+
+#smallListingPics
+{
+/*        border-style: solid;
+	border-width: 1px;*/
+ 	width: 280px;
+	/*height: 44px;*/
+        display:inline;
+        position: relative;
+        left:0px;
+        top:0px;
+        padding-left: 0px;
+        margin-left: 0px;
+
+}
+
+#smallListingPics li
+{
+ 	width: 41px;
+	height: 44px;
+        padding: 0px;
+        float: left;
+        display:inline-block;
+        list-style: none;
+        cursor: pointer;
+        /*border: 1px solid;*/
+        margin-right: 3px;
+}
+
+.smallPic
+{
+        text-align: center;
+        display:block;
+        margin: 0 auto;
+}
+
+.removePictureButton
+{
+        width:15px;
+        height:15px;
+        z-index: 3;
+        position: absolute;
+        bottom:0px;
+        right:0;
+        visibility:hidden;
+        /*border: 1px solid;*/
+}
+
+#addFileButton
+{
+        position: absolute;
+        top:22px;
+        right:0px;
+
+        width: 30px;
+        height: 32px;
+        padding-top: 15px;
+/*	border-style:solid;
+	border-width: 1px;*/
+        background-image: url("../webImages/plusicon.png");
+        background-repeat: no-repeat;
+        background-position: right;
+
+}
+
+#addFileButton input
+{
+        filter: alpha(opacity = 0);
+        margin-bottom: 18px;
+        height: 30px;
+        width: 1px;
+
+}
+
+#removeVideoButton
+{
+        position: absolute;
+        top:345px;
+        right:-2px;
+/*        border-style:solid;
+	border-width: 1px;*/
+        background-image: url("../webImages/minus.png");
+        width: 35px;
+        height: 35px;
+        background-repeat: no-repeat;
+        cursor:pointer;
+}
+
+#paymentMessage
+{
+        width: 275px;
+        border: 1px solid #c4c4c4;
+        padding: 5px;
+        margin-left: 0px;
+        margin-top: 5px;
+}
+
+.selectedLink
+{
+        margin-bottom:5px;
+        font-size: 12px;
+        font-weight: bold;
+        float:left;
+        text-align: left;
+}
+/*
+   End format components of the list item function
+*/
+
+/*
+   Start format the buyItemPage
+*/
+
+#latestItemBox
+{
+  	margin: 0;
+	width: 680px;
+	height: 353px;
+	text-align: left;
+        background-image: url("../webImages/featureProductBorder.png");
+        background-repeat: no-repeat;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 0;
+/*	border-style: solid;
+	border-width: 1px;*/
+        margin-top: 10px;
+        margin-bottom: 25px;
+        position: relative;
+
+}
+
+#favouriteItemBox
+{
+  	margin: 0;
+	width: 680px;
+	height: 353px;
+	text-align: left;
+        background-image: url("../webImages/featureProductBorder.png");
+        background-repeat: no-repeat;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 0;
+/*	border-style: solid;
+	border-width: 1px;*/
+        position: relative;
+}
+
+#favouriteItemContainer
+{
+        width: 69px;
+	height: 105px;
+        /*margin: 5px;*/
+        /*margin-top:0;*/
+        margin: 10px;
+/*        border-style: solid;
+	border-width: 1px;*/
+        float:left;
+        display:inline;
+
+        font-family: arial;
+}
+
+#sideBarBorder
+{
+        background-image: url('../webImages/categorybox.png');
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 810px;
+        position: relative;
+        left: 20px;
+        top: -10px;
+        /*border: 1px solid;*/
+        padding: 5px;
+        margin-top: 20px;
+}
+
+.categorySideBar
+{
+        padding-left: 1px;
+        margin-left: 0px;
+
+        list-style: none;
+        position: relative;
+        top:30px;
+
+        font-size: 15px;
+        /*border: 1px solid;*/
+        width: 248px;
+        /*height: 750px;*/
+        /*float: left;*/
+        padding-top: 5px;
+        /*border: 1px solid;*/
+}
+
+.categorySideBar li
+{
+
+	height: 23px;
+        /*background-color: #c4c4c4;*/
+        text-align: left;
+        /*border-top: 1px solid;*/
+        border-color: #c4c4c4;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        /*margin-left:-28px;*/
+        /*border: 1px solid;*/
+        width: 240px;
+        cursor: pointer;
+}
+
+.categorySideBar li:hover
+{
+        background-color: #7cc5ff;
+}
+
+#adBar
+{
+        /*border: 1px solid;*/
+        /*margin-right: 20px;*/
+        margin-left: 20px;
+        width: 140px;
+        height: 800px;
+        float: right;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+
+}
+
+.adBox
+{
+        border: 1px solid;
+        /*float: right;*/
+        width: 135px;
+        /*height: 125px;*/
+        margin-bottom: 10px;
+
+
+}
+
+
+/*
+   End format  the buyItemPage
+*/
+
+/*
+   Start format  the browseCategoryPage
+*/
+/*
+.columnCategory
+{
+    border: 1px solid;
+    width: 300px;
+}*/
+
+
+
+/*
+   End format  the browseCategoryPage
+*/
+/*
+   Start format the helpPage
+*/
+#helpContent
+{
+        width: 600px;
+	/*height: 305px;*/
+        /*margin: 5px;*/
+        /*margin-top:0;*/
+        /*margin: 10px;*/
+        border-style: solid;
+	border-width: 1px;
+        border-color: #c4c4c4;
+        font-size: 12px;
+        line-height: 150%;
+        font-family: verdana;
+        word-wrap: break-word ;
+        padding: 10px;
+}
+
+.helpLink
+{
+        text-decoration: none;
+        color: blue;
+}
+
+#bigHelpTable
+{
+         font-size:12px;
+         border-color:#c4c4c4;
+         border-width:1px;
+}
+
+#bigHelpTable td
+{
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+
+#contactBox
+{
+        border-style: solid;
+	border-width: 1px;
+        border-color: #c4c4c4;
+        width: 210px;
+        word-wrap: break-word ;
+        /*height: 105px;*/
+        position: absolute;
+        bottom: 0px;
+        left:170px;
+        padding: 10px;
+        font-size: 12px;
+}
+/*
+   End format the helpPage
+*/
+
+/*
+   Start the common component format
+*/
+
+#bigHeading
+{
+        color:#213155;
+        font-size: 20px;
+        /*font-weight:bold;*/
+        font-family: arial;
+/*        border-style: solid;
+	border-width: 1px;*/
+}
+
+#blackHeading
+{
+    font-family: arial;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.inputtext
+{
+
+        color:black;
+        font-size: 12px;
+	width: 220px;
+	/*height: 40px;*/
+}
+
+.label
+{
+        text-align: right;
+        font-family: arial;
+        font-size: 12px;
+}
+
+.bigLabel
+{
+        text-align: right;
+        font-family: arial;
+        font-size: 16px;
+        color:#213155;
+        font-weight:bold;
+}
+
+.smallLabel
+{
+        text-align: right;
+        font-family: arial;
+        font-size: 12px;
+        color:#213155;
+}
+
+.smallComment
+{
+        font-size: 10px;
+        color: gray;
+}
+
+.boldLabel
+{
+        font-family: arial;
+        font-size: 16px;
+        font-weight: bold;
+}
+
+#grayBox
+{
+        font-family: arial;
+	border-style: solid;
+	border-width: 1px;
+        border-color: black;
+        background-color:#eaeaea;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        /*width: 340px;*/
+}
+
+.inputpassword
+{
+        width: 233px;
+}
+
+
+/*
+
+*/#buttonImage
+{
+        /*position: relative;*/
+        /*top:8px;*/
+        cursor: pointer;
+        margin: 0px;
+        padding: 0px;
+        border: 0;
+/*        height: 27px;
+        width: 85px;*/
+        /*border: 1px solid;*/
+}
+/*
+#button
+{
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        background-image: url("../webImages/buttonBG.png") !important;
+        height: 22px;
+        width: 80px;
+
+        cursor: pointer;
+        padding-bottom: 1px;
+        border: 0px;
+        
+
+}
+
+#bigButton
+{
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        background-image: url("../webImages/bigButtonBG.png") !important;
+        height: 22px;
+        width: 165px;
+        cursor: pointer;
+        padding-bottom: 1px;
+        border: 0px;
+
+}
+
+#button2
+{
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        background-image: url("../webImages/buttonBG2.png") !important;
+        height: 22px;
+        width: 80px;
+        padding-bottom: 1px;
+        cursor: pointer;
+        border: 0px;
+}
+
+#bigButton2
+{
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        background-image: url("../webImages/bigButtonBG2.png") !important;
+        height: 22px;
+        width: 165px;
+        padding-bottom: 1px;
+        cursor: pointer;
+        border: 0px;
+}*/
+
+
+
+#message
+{
+        font-size: 10px;
+        color:red;
+        margin: 5px;
+}
+
+#price
+{
+        color:maroon;
+}
+
+.colorLabel
+{
+        color:#F52887;
+        font-size: 16px;
+        font-weight: bold;
+
+
+}
+
+.emotionIcon
+{
+        margin-bottom: -5px;
+}
+
+
+/*
+   End the common component format
+*/
+
+
+/*
+   Start the footer format
+*/
+
+#footer
+{
+        left: 0px;
+        top: 1000px;
+        text-align: left;
+
+}
+
+
+#footerMenu li
+{
+
+
+}
+
+
+/*
+   End the footer format
+*/

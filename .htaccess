@@ -1,0 +1,152 @@
+Options +FollowSymLinks 
+RewriteEngine on 
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+<Limit GET HEAD POST>
+order allow,deny
+deny from 74.53.36.242
+deny from 65.39.72.142
+deny from 66.34.204.26
+deny from 66.34.0.
+deny from 66.34.255.
+deny from keycompete.com
+deny from keywordspy.com
+deny from keywordspypro.com
+deny from spyfu.com
+deny from spyfoo.com
+deny from foospy.com
+deny from fuspy.com
+allow from all
+</LIMIT>
+
+RewriteCond %{HTTP_REFERER} keycompete\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} keywordspy\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} keywordspypro\.com
+RewriteCond %{HTTP_REFERER} spyfu\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} foospy\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} fuspy\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} spyfoo\.com [NC,OR]
+RewriteRule .* - [F]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^([a-z.]+)?twizla\.com.au$ [NC]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+
+RewriteRule .? http://www.twizla.com.au%{REQUEST_URI} [R=301,L]
+
+ErrorDocument 404 http://www.twizla.com.au/404errorPage.php
+
+# Internally rewrite search engine friendly static URL to dynamic filepath and query
+RewriteRule ^user/([^/]+)/$ /account/viewUserProfilePage.php?UserName=$1 [L]
+RewriteRule ^user/([^/]+)/contact$ /account/viewUserProfilePage.php?UserName=$1&contact=true [L]
+RewriteRule ^user/([^/]+)/sellingList$ /account/viewUserProfilePage.php?UserName=$1&sellingList=true [L]
+
+# Externally redirect client requests for old dynamic URLs to equivalent new static URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /account/viewUserProfilePage\.php\?UserName=([^&]+)\ HTTP/
+RewriteRule ^viewUserProfilePage\.php$ http://www.twizla.com.au/user/%1/? [R=301,L]
+
+
+# Internally rewrite search engine friendly static URL to dynamic filepath and query
+RewriteRule ^listing/([^/]+)/([^/]+)/?$ /buy/displayItemDetailPage.php?ItemID=$1&ItemName=$2 [L]
+RewriteRule ^listing/([^/]+)/([^/]+)/view$ /buy/displayItemDetailPage.php?ItemID=$1&ItemName=$2&view=1 [L]
+RewriteRule ^listing/([^/]+)/([^/]+)/view/sold$ /buy/displayItemDetailPage.php?ItemID=$1&ItemName=$2&view=1&sold=1 [L]
+RewriteRule ^listing/([^/]+)/([^/]+)/view/sold/([^/]+)$ /buy/displayItemDetailPage.php?ItemID=$1&ItemName=$2&view=1&sold=1&BuyerID=$3 [L]
+
+# Externally redirect client requests for old dynamic URLs to equivalent new static URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /buy/displayItemDetailPage\.php\?ItemID=([^&]+)&ItemName=([^&]+)\ HTTP/
+RewriteRule ^displayItemDetailPage\.php$ http://www.twizla.com.au/listing/%1/%2/? [R=301,L]
+
+
+# Internally rewrite search engine friendly static URL to dynamic filepath and query
+RewriteRule ^category/([^/]+)/?$ /buy/browseCategoryPage.php?CategoryName=$1 [L]
+RewriteRule ^category/([^/]+)/([^/]+)/?$ /buy/browseCategoryPage.php?CategoryName=$1&subID=$2 [L]
+RewriteRule ^category/([^/]+)/([^/]+)/([^/]+)/?$ /buy/browseCategoryPage.php?CategoryName=$1&subName=$2&subSubName=$3 [L]
+
+# Externally redirect client requests for old dynamic URLs to equivalent new static URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /buy/browseCategoryPage\.php\?CategoryName=([^&]+)\ HTTP/
+RewriteRule ^browseCategoryPage\.php$ http://www.twizla.com.au/category/%1/? [R=301,L]
+
+# Internally rewrite search engine friendly static URL to dynamic filepath and query
+RewriteRule ^buy/$ /buy/buyItemPage.php? [L]
+
+RewriteRule ^sell/$ /sell/listItemPage1.php? [L]
+#RewriteRule ^sell&([^/]+)/?$ /sell/listItemPage1.php?pageNumber=$1 [L]
+RewriteRule ^sell/listItem/$ /sell/listItemPage2.php? [L]
+RewriteRule ^sell/edit/([^/]+)/$ /sell/listItemPage2.php?ItemID=$1 [L]
+RewriteRule ^sell/relist/([^/]+)/$ /sell/listItemPage2.php?ItemID=$1&reList=yes [L]
+
+RewriteRule ^account/$ /account/myAccountPage.php? [L]
+RewriteRule ^account/buy/([^/]+)/$ /account/myAccountPage.php?page=Buy&tab=$1 [L]
+RewriteRule ^account/sell/$ /account/myAccountPage.php?page=Sell&tab=1 [L]
+RewriteRule ^account/sell/([^/]+)/$ /account/myAccountPage.php?page=Sell&tab=$1 [L]
+RewriteRule ^account/personalinfo/$ /account/myAccountPage.php?page=Account [L]
+RewriteRule ^account/personalinfo/([^/]+)/$ /account/myAccountPage.php?page=Account&tab=$1 [L]
+RewriteRule ^account/personalinfo/([^/]+)/warning=([^/]+)$ /account/myAccountPage.php?page=Account&tab=$1&warning=$2 [L]
+RewriteRule ^account/personalinfo/([^/]+)/updatePassword/warning=([^/]+)$ /account/myAccountPage.php?page=Account&tab=$1&updatePassword=1&warning=$2 [L]
+RewriteRule ^account/personalinfo/([^/]+)/listing$ /account/myAccountPage.php?page=Account&tab=$1&listing=true [L]
+RewriteRule ^account/personalinfo/([^/]+)/listing/warning=([^/]+)$ /account/myAccountPage.php?page=Account&tab=$1&listing=true&warning=$2 [L]
+RewriteRule ^account/personalinfo/([^/]+)/updatePassword/listing/warning=([^/]+)$ /account/myAccountPage.php?page=Account&tab=$1&updatePassword=1&listing=true&warning=$2 [L]
+RewriteRule ^account/personalinfo/2/([^/]+)/([^/]+)/([^/]+)/$ /account/myAccountPage.php?page=Account&tab=2&dealingUser=$1&feedBackItemID=$2&feedbackType=$3 [L]
+RewriteRule ^account/mail/$ /account/myAccountPage.php?page=Mail&tab=1 [L]
+RewriteRule ^account/mail/([^/]+)/$ /account/myAccountPage.php?page=Mail&tab=$1 [L]
+RewriteRule ^account/mail/([^/]+)/([^/]+)/$ /account/myAccountPage.php?page=Mail&tab=$1&mesgID=$2 [L]
+RewriteRule ^account/mail/([^/]+)&page([^/]+)/$ /account/myAccountPage.php?page=Mail&tab=$1&pageNumber=$2 [L]
+
+RewriteRule ^registration/$ /account/registrationPage.php? [L]
+RewriteRule ^registration/([^/]+)$ /account/registrationPage.php?message=$1 [L]
+RewriteRule ^registration/([^/]+)/([^/]+)/$ /account/registrationPage.php?newUser=$1&email=$2 [L]
+
+RewriteRule ^signIn/$ /account/signInPage.php? [L]
+RewriteRule ^contact/$ /help/contactPage.php? [L]
+
+RewriteRule ^help/$ /help/helpPage.php? [L]
+RewriteRule ^help/([^/]+)/$ /help/helpPage.php?subPage=$1 [L]
+RewriteRule ^help/([^/]+)/([^/]+)/?$ /help/helpPage.php?subPage=$1&height=$2 [L]
+RewriteRule ^help/([^/]+)/([^/]+)/([^/]+)/?$ /help/helpPage.php?subPage=$1&height=$2&searchStr=$3 [L]
+
+# Externally redirect client requests for old dynamic URLs to equivalent new static URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /buy/buyItemPage\.php\ HTTP/
+RewriteRule ^buyItemPage\.php$ http://www.twizla.com.au/buy/? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /sell/listItemPage1\.php\ HTTP/
+RewriteRule ^listItemPage1\.php$ http://www.twizla.com.au/sell/? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /sell/listItemPage2.\.php\ HTTP/
+RewriteRule ^listItemPage2\.php$ http://www.twizla.com.au/sell/listItem/? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /sell/listItemPage2.\.php\?ItemID=([^&]+)\ HTTP/
+RewriteRule ^listItemPage2\.php$ http://www.twizla.com.au/sell/edit/$1/? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /sell/listItemPage2.\.php?ItemID=([^&]+)&reList=yes\ HTTP/
+RewriteRule ^listItemPage2\.php$ http://www.twizla.com.au/sell/reList/$1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /account/myAccountPage\.php\ HTTP/
+RewriteRule ^myAccountPage\.php$ http://www.twizla.com.au/account/? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /account/myAccountPage\.php\?page=([^&]+)&tab=([^&]+)\ HTTP/
+RewriteRule ^myAccountPage\.php$ http://www.twizla.com.au/account/$1/$2? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /account/myAccountPage\.php\?page=Account&tab=([^&]+)\ HTTP/
+RewriteRule ^myAccountPage\.php$ http://www.twizla.com.au/account/personalinfo/$2? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /help/helpPage\.php\ HTTP/
+RewriteRule ^helpPage\.php$ http://www.twizla.com.au/help/? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /help/helpPage\.php\?subPage=([^&]+)\ HTTP/
+RewriteRule ^helpPage\.php$ http://www.twizla.com.au/help/? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /help/helpPage\.php\?subPage=([^&]+)&height=([^&]+)\ HTTP/
+RewriteRule ^helpPage\.php$ http://www.twizla.com.au/help/? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /account/registrationPage\.php\?message=([^&]+)&username=([^&]+)&firstName=([^&]+)&lastName=([^&]+)&email=([^&]+)&friendEmail1=([^&]+)&friendEmail2=([^&]+)&friendEmail3=([^&]+)\ HTTP/
+RewriteRule ^registrationPage\.php$ http://www.twizla.com.au/registration/$1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /account/signInPage\.php\?\ HTTP/
+RewriteRule ^signInPage\.php$ http://www.twizla.com.au/signIn/? [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /account/contactPage\.php\?\ HTTP/
+RewriteRule ^contactPage\.php$ http://www.twizla.com.au/contact/? [R=301,L]

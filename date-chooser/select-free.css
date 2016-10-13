@@ -1,0 +1,27 @@
+/* http://www.hedgerwow.com/360/bugs/css-select-free.html */
+.select-free {
+
+	 z-index:10;
+	 cursor:pointer;
+	 overflow:hidden;
+         padding: 2px;
+         padding-right: 0px;
+	 /*width:23em;*/
+/*         border-style: solid;
+         border-width: 1px;*/
+         width:200px;
+         /*height: 180px;*/
+         background-color: black;
+}
+.select-free iframe {
+	 display:none;
+	 /*display:block;*/
+	 position:absolute;
+          top:120px;
+	 left:0;
+	 z-index:-1;
+         
+	 /*filter:mask();*/
+/*	 width:3000px;
+	 height:3000px*/
+}

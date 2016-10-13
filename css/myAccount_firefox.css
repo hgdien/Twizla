@@ -1,0 +1,499 @@
+/* 
+    Document   : myAccount
+    Created on : Jan 18, 2010, 4:08:30 PM
+    Author     : HG
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+#messageControlPanel
+{
+    width: 180px;
+    height: 600px;
+    border-style:solid;
+    border-width: 1px;
+    float: left;
+    padding-left: 20px;
+    font-style: arial;
+    font-size:16px;
+}
+
+#messageControlPanel li
+{
+    width: 160px;
+    height: 50px;
+    
+/*    border-style:solid;
+    border-width: 1px;*/
+    text-decoration: none;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+
+
+#header
+{
+    color:blue;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: -25px;
+    margin-bottom: 5px;
+    margin-left: -5px;
+    /*background-color: #c4c4c4;*/
+    font-family: verdana;
+    font-size: 14px;
+    background-image: url('../webImages/messageListHeader.png');
+    background-repeat:no-repeat;
+    width: 720px;
+    height: 30px;
+}
+
+#header label
+{
+    position: relative;
+}
+
+#listPanel
+{
+    margin-left: 2px;
+    font-family: verdana;
+    font-size: 14px;
+
+}
+
+#chooseItemHeader
+{
+    color:blue;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 13px;
+    margin-top: -7px;
+    margin-bottom: 1px;
+    margin-left: -3px;
+    /*background-color: #c4c4c4;*/
+    font-family: verdana;
+    font-size: 14px;
+    background-image: url('../webImages/chooseItemHeader.png');
+    background-repeat:no-repeat;
+    width: 720px;
+    height: 30px;
+    /*border:1px solid;*/
+}
+
+#chooseItemHeader label
+{
+    position: relative;
+}
+
+.messageLink
+{
+/*    position:relative;
+    left:217px;*/
+    
+    text-decoration:none;
+    color:black;
+
+}
+
+.messageLink:hover
+{
+    text-decoration: underline;
+}
+
+
+
+#sideBar
+{
+    background-image: url('../webImages/myaccountmenusidebar.png');
+    background-repeat: no-repeat;
+/*    border-style: solid;
+    border-width: 1px;*/
+    width: 261px;
+    height:641px;
+    position: absolute;
+    left: 40px;
+    top:60px;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+#sideBar a
+{
+    padding-bottom: 40px;
+
+}
+
+
+
+#itemListBox
+{
+/*    border-style: solid;
+    border-width: 1px;*/
+    margin-left: 0px;
+    margin-top: 57px;
+    width: 700px;
+    height: 528px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+#myAccountItemContainer
+{
+    width: 110px;
+    height: 160px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    /*border: 1px solid;*/
+    float:left;
+    font-family: arial;
+    font-size:12px;
+    position: relative;
+}
+
+.myAccountRemoveButton
+{
+    z-index: 3;
+    /*opacity:0.7;*/
+    position:absolute;
+    top: 80px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    display:inline-block;
+/*                border-style: solid;
+    border-width: 1px;*/
+    /*background-color: white;*/
+    /*visibility: hidden;*/
+}
+
+#notPaidTag
+{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -12px;
+    z-index: 2;
+    border : 0;
+    margin-bottom: 0;
+}
+
+.removeButton
+{
+    position: absolute;
+    margin-top: 75px;
+    margin-left: -36px;
+    /*display: block;*/
+    z-index: 2;
+}
+
+#deleteAllButton
+{
+    position: absolute;
+    top:50px;
+    right: 40px;
+    text-decoration: none;
+}
+
+#reListAllButton
+{
+    position: absolute;
+    top:50px;
+    right: 180px;
+    text-decoration: none;
+}
+
+#deleteMailButton
+{
+    position: absolute;
+    top:50px;
+    right: 180px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#deleteAllMailButton
+{
+    position: absolute;
+    top:50px;
+    right: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#messageForm
+{
+    position: relative;
+    top:10px;
+    left: 380px;
+    width:320px;
+    height: 26px;
+    /*border: 1px solid;*/
+    
+}
+
+#MessageBox
+{
+/*    border-style: solid;
+    border-width: 1px;*/
+    position: relative;
+    top:14px;
+    width: 715px;
+    height: 530px;
+    /*padding: 5px;*/
+}
+
+#messageContent
+{
+    width: 705px;
+    height: 465px;
+    padding: 5px;
+    
+    word-wrap: break-word ;
+    overflow: auto;
+/*        border-style: solid;
+    border-width: 1px;*/
+    
+}
+
+.warningWindow
+{
+/*    border-style: solid;
+    border-width: 1;*/
+    height: 40px;
+    width: 400px;
+    position: absolute;
+    top:45px;
+    padding:5px;
+    color:#17479e;
+    font-size: 14px;
+    font-weight: bold;
+
+
+}
+
+#personalDetailBox
+{
+        position:relative;
+        top: 70px;
+        left:25px;
+        width: 90%;
+        text-align: left;
+        font-family: arial;
+}
+
+#personalDetailBox table td
+{
+        height: 15px;
+
+}
+
+#stateSelectBox
+{
+        width: 225px;
+}
+
+#resolutionText
+{
+    width:600px;
+    height:40px;
+/*        border-style: solid;
+    border-width: 1;*/
+    /*font-family: verdana;*/
+    font-size: 14px;
+}
+
+#resolveForm
+{
+    /*width:300px;*/
+    height:240px;
+    margin-top: 5px;
+    position:relative;
+    top: 90px;
+    left:0px;
+/*        border-style: solid;
+    border-width: 1;*/
+    /*font-family: verdana;*/
+    font-size: 14px;
+}
+
+#resolveFooter
+{
+     margin-top:155px;
+     font-size: 14px;
+}
+
+.chooseItemWindow
+{
+    position:absolute;
+    top: 140px;
+    left:15px;
+    width:670px;
+    height:430px;
+    margin-top: 5px;
+/*    border-style: solid;
+    border-width: 1;*/
+    background-image: url('../webImages/itemChooserBorder.png');
+    background-repeat: no-repeat;
+    visibility:hidden;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.chooserCloseButton
+{
+    position: absolute;
+    right:210px;
+    bottom: 4px;
+}
+
+#waitingFeedbackHeading
+{
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #c4c4c4;
+    color: blue;
+    text-align: center;
+}
+
+#feedbackList
+{
+        width: 700px;
+	/*height: 40px;*/
+        /*padding: 5px;*/
+        /*padding-top: 10px;*/
+        padding-left: 1px;
+/*        border-style: solid;
+	border-width: 1px;*/
+}
+
+
+#feedbackList li
+{
+/*        position:relative;
+        left:0px;*/
+	list-style: none;
+}
+
+#feedbackLegend
+{
+    position:absolute;
+    top:52px;
+    font-size:12px;
+}
+
+#feedbackListBox
+{
+/*    border-style: solid;
+    border-width: 1px;*/
+    margin-left: 0px;
+    margin-top: 57px;
+    width: 700px;
+    height: 525px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+/* ***** Tabs *************************************************************** */
+div.MyAccountTabView
+{
+    position: relative;
+    left: 350px;
+    top:34px;
+    width: 740px;
+    height: 640px;
+/*              border-style: solid;
+            border-width: 1;*/
+
+}
+
+div.MyAccountTabView div.Tabs
+{
+      /*height: 25px;*/
+      margin-left: 5px;
+      background: url('../webImages/myAccountBlueTab.png') no-repeat;
+      
+
+    /*          border-style: solid;
+            border-width: 1;*/
+
+}
+
+div.MyAccountTabView div.Tabs a
+{
+  display: block;
+  float:    left;
+  
+  /*margin-right: 1px;*/
+
+  width: 107px;
+
+  text-align: center;
+
+  height:      25px;
+  /*line-height: 21px;*/
+  vertical-align: middle;
+
+  background: url('../webImages/myAccountBlueTab.png') no-repeat 0px   0px;
+
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 12px;
+  color:   white;
+  padding-top: 10px;
+  margin-bottom: -3px;
+  cursor:  pointer;
+  text-align: center;
+  /*padding-left: 22px;*/
+/*          border-style: solid;
+	border-width: 1;*/
+
+}
+
+/*div.MyAccountTabView div.Tabs a:hover
+{
+  background: url('../webImages/tab-view.png') no-repeat 0px -35px;
+}
+*/
+div.MyAccountTabView div.Tabs a.Current,
+div.MyAccountTabView div.Tabs a.Current:hover
+{
+  margin-top: 01px;
+  height:     25px;
+  background: url('../webImages/myAccountPinkTab.png') no-repeat 0px   0px;
+  cursor:  pointer;
+}
+
+
+/* ***** Pages ************************************************************** */
+
+div.MyAccountTabView div.Pages
+{
+  clear: both;
+  
+/*  border: 1px solid #404040;
+  border-top-width: 0;*/
+
+  /*background-color: #eaeaea;*/
+  background: url('../webImages/myaccountcontentbox.png') no-repeat;
+  /*background-repeat: no-repeat;*/
+  word-wrap: break-word ;
+}
+
+div.MyAccountTabView div.Pages                  { overflow: hidden; }
+div.MyAccountTabView div.Pages div.Page         { overflow:   auto; }
+div.MyAccountTabView div.Pages div.Page div.Pad { padding: 7px 7px; }
+
+
+
+

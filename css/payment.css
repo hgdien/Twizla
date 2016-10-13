@@ -1,0 +1,73 @@
+/* 
+    Document   : payment.css
+    Created on : Feb 11, 2010, 4:00:21 PM
+    Author     : HG
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.tableHeader
+{
+    
+    color:blue;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 13px;
+    margin-top: -7px;
+    margin-bottom: 1px;
+    margin-left: 25px;
+    /*background-color: #c4c4c4;*/
+    font-family: verdana;
+    font-size: 14px;
+    background-image: url('../webImages/chooseItemHeader.png');
+    background-repeat:no-repeat;
+    width: 720px;
+    height: 30px;
+    /*border:1px solid;*/
+}
+
+.tableHeader label
+{
+    position: relative;
+}
+
+#paymentMethodBox
+{
+    position: absolute;
+    width: 210px;
+    /*border: 1px solid #c4c4c4;*/
+    padding: 10px;
+}
+
+#paymentDetail
+{
+    position: relative;
+    left:235px;
+    width: 430px;
+    
+    font-size: 14px;
+
+    text-align: left;
+}
+
+#paymentDetail div
+{
+    border: 1px solid #c4c4c4;
+    padding: 10px;
+    /*height: 150px;*/
+
+}
+
+#confirmPaymentButton
+{
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    visibility: hidden;
+}
